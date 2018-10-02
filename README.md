@@ -1,4 +1,4 @@
-# grpc-health-check
+# grpc-healthcheck-example
 
 This repository is an example how implement health check in gRPC server with Go.
 
