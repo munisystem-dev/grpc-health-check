@@ -13,7 +13,7 @@ import (
 
 const (
 	address     = "localhost:8080"
-	serviceName = "sample"
+	serviceName = "example"
 )
 
 func main() {

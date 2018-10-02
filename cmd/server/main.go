@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	serviceName = "sample"
+	serviceName = "example"
 	port        = ":8080"
 )
 
