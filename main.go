@@ -7,7 +7,6 @@ import (
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health/grpc_health_v1"
-	"google.golang.org/grpc/reflection"
 )
 
 type server struct{}
@@ -25,7 +24,6 @@ func main() {
 	}
 	s := grpc.NewServer()
 	grpc_health_v1.RegisterHealthServer(s, &server{})
-	reflection.Register(s)
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
 	}
